@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sandwhiches</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ham_cheese_sandwhich">Ham cheese Sandwhich</string>
+    <string name="option1">Club Sandwhich</string>
+    <string name="option2">Cheese Sandwhich</string>
+    <string name="option3">wraps</string>
+    <string name="option4">Grilled Sandwhich</string>
+    <string name="subtotal_price">Subtotal %s</string>
+    <string name="total_price">Total %s</string>
+    <string name="new_sandwhich_order">New Sandwhich Order</string>
+    <string name="order_details">preference: veg \n type: %2$s \nPickup date: %3$s \n Total: %4$s \n\n Thank you!</string>
+</resources>

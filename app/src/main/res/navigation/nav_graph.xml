@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sandwhiches"
+    app:startDestination="@id/sandwhich">
+
+    <fragment
+        android:id="@+id/sandwhich"
+        android:name="com.example.sandwhiches.SandwhichFragment"
+        android:label="fragment_sandwhich"
+        tools:layout="@layout/fragment_sandwhich" >
+        <action
+            android:id="@+id/action_sandwhich_to_type_sandwhich"
+            app:destination="@id/type_sandwhich" />
+        <action
+            android:id="@+id/action_sandwhich_to_nonveg"
+            app:destination="@id/nonveg" />
+    </fragment>
+    <fragment
+        android:id="@+id/type_sandwhich"
+        android:name="com.example.sandwhiches.type_sandwhich"
+        android:label="fragment_type_sandwhich"
+        tools:layout="@layout/fragment_type_sandwhich" >
+        <action
+            android:id="@+id/action_type_sandwhich_to_pickup"
+            app:destination="@id/pickup" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickup"
+        android:name="com.example.sandwhiches.pickup"
+        android:label="fragment_pickup"
+        tools:layout="@layout/fragment_pickup" >
+        <action
+            android:id="@+id/action_pickup_to_sendOrderFragment"
+            app:destination="@id/sendOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nonveg"
+        android:name="com.example.sandwhiches.nonveg"
+        android:label="fragment_nonveg"
+        tools:layout="@layout/fragment_nonveg" >
+        <action
+            android:id="@+id/action_nonveg_to_pickup"
+            app:destination="@id/pickup" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendOrderFragment"
+        android:name="com.example.sandwhiches.SendOrderFragment"
+        android:label="fragment_send_order"
+        tools:layout="@layout/fragment_send_order" />
+</navigation>
